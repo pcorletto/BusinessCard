@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BusinessCard</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="intro_button_prompt">Intro</string>
+    <string name="contact_button_prompt">Contact</string>
+    <string name="services_button_prompt">Services</string>
+    <string name="experience_button_prompt">Experience</string>
+    <string name="education_button_prompt">Education</string>
+    <string name="FRAGMENT_NAME">FRAGMENT_NAME</string>
+
+</resources>
