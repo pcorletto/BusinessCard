@@ -41,6 +41,20 @@ public class SectionsFragment extends Fragment{
         education_button = (Button) view.findViewById(R.id.education_button);
 
         frag = new IntroFragment();
+
+        fragment_name = "com.example.android.businesscard.IntroFragment";
+
+        // Store new fragment_name into SharedPrefs file
+
+        sharedPreferences = getContext().getSharedPreferences
+                (getString(R.string.FRAGMENT_NAME), Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(getString(R.string.FRAGMENT_NAME), fragment_name);
+        editor.commit();
+
+        // Finished with SharedPrefs
+        
         transaction = getFragmentManager().beginTransaction().
                 add(R.id.containers, frag);
         transaction.commit();
